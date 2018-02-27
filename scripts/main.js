@@ -364,7 +364,7 @@ $( '#submit' ).on( "click", function() {
 
             var tokens = web3.toBigNumber(result).toString();
             var isOfTkn = (web3.fromWei(tokens, 'ether') * Math.pow(10, 18)).toFixed(0)
-            $('#inteserest').text(isOfTkn + ' Golos')
+            $('#inteserest').text(isOfTkn + ' Certificates of Deposit')
 
         } else {
             toastr["error"]("Fail connection", "Infura API")
@@ -373,7 +373,7 @@ $( '#submit' ).on( "click", function() {
                 toastr["success"](" connection", "Etherscan API");
                 var tokens = web3.toBigNumber(result).toString();
                 var isOfTokn = (web3.fromWei(tokens, 'ether') * Math.pow(10, 18)).toFixed(0)
-                $('#inteserest').text(isOfTokn + ' Assets')
+                $('#inteserest').text(isOfTokn + ' Certificates of Deposit')
 
 
             });
@@ -387,7 +387,7 @@ $( '#submit' ).on( "click", function() {
 
             var tokens = web3.toBigNumber(result).toString();
             var isOfTkn = (web3.fromWei(tokens, 'ether') * Math.pow(10, 18)).toFixed(0)
-            $('#countdown-days').text(isOfTkn + ' Assets')
+            $('#countdown-days').text(isOfTkn + ' Certificates of Deposit')
         console.log(isOfTkn)
 
 
@@ -404,7 +404,7 @@ $( '#submit' ).on( "click", function() {
             var tokens = web3.toBigNumber(result).toString();
             var blOfTokn = web3.fromWei(tokens, 'ether') * Math.pow(10, 18)
 
-            $('#coinage').text(" " + blOfTokn + ' Assets')
+            $('#coinage').text(" " + blOfTokn + ' Certificates of Deposit')
 
         } else {
             console.log(err); // Dump errors here
@@ -412,7 +412,7 @@ $( '#submit' ).on( "click", function() {
                 var tokens = web3.toBigNumber(result).toString();
                 var blOfTokn = web3.fromWei(tokens, 'ether') * Math.pow(10, 18)
 
-                $('#coinage').text(" " + blOfTokn + ' Assets')
+                $('#coinage').text(" " + blOfTokn + ' Certificates of Deposit')
 
 
             });
@@ -428,7 +428,7 @@ $( '#submit' ).on( "click", function() {
             var tokens = web3.toBigNumber(result).toString();
             var blOfTokn = web3.fromWei(tokens, 'ether') * Math.pow(10, 18)
 
-            $('#deposit').text(" " + blOfTokn + ' Assets')
+            $('#deposit').text(" " + blOfTokn + ' Certificates of Deposit')
 
         } else {
             console.log(err); // Dump errors here
@@ -436,7 +436,7 @@ $( '#submit' ).on( "click", function() {
                 var tokens = web3.toBigNumber(result).toString();
                 var blOfTokn = web3.fromWei(tokens, 'ether') * Math.pow(10, 18)
 
-                $('#deposit').text(" " + blOfTokn + ' Assets')
+                $('#deposit').text(" " + blOfTokn + ' Certificates of Deposit')
 
 
             });
