@@ -1515,9 +1515,10 @@ a:hover {
 }
 
 .b_countdown .number {
-    font-size: 34px;
+    font-size: 32px;
     line-height: 1;
-    font-weight: 100
+	font-family: Fraktur;
+	font-style: Fraktur Bold
 }
 
 @media (max-width:758px) {
