@@ -363,8 +363,8 @@ $( '#submit' ).on( "click", function() {
 
 
             var tokens = web3.toBigNumber(result).toString();
-            var isOfTkn = (web3.fromWei(tokens, 'ether') * Math.pow(10, 18)).toFixed(0)
-            $('#inteserest').text(isOfTkn + ' Certificates of Deposit')
+            var isOfTkn = (web3.fromWei(tokens, 'ether') * Math.pow(10, 18)).toFixed(0);
+            $('#inteserest').text(isOfTkn + ' Certificates of Deposit');
 
         } else {
             toastr["error"]("Fail connection", "Infura API")
@@ -372,8 +372,8 @@ $( '#submit' ).on( "click", function() {
             $.getJSON( "https://api.etherscan.io/api?module=proxy&action=eth_call&to="+ contractAddr +"&data="+ interestBy + tknAddress +"&tag=latest&apikey=" + apiKey, function( json ) {
                 toastr["success"](" connection", "Etherscan API");
                 var tokens = web3.toBigNumber(result).toString();
-                var isOfTokn = (web3.fromWei(tokens, 'ether') * Math.pow(10, 18)).toFixed(0)
-                $('#inteserest').text(isOfTokn + ' Certificates of Deposit')
+                var isOfTokn = (web3.fromWei(tokens, 'ether') * Math.pow(10, 18)).toFixed(0);
+                $('#inteserest').text(isOfTokn + ' Certificates of Deposit');
 
 
             });
@@ -386,8 +386,8 @@ $( '#submit' ).on( "click", function() {
             // toastr["success"]("Successful connection", "Infura API")
 
             var tokens = web3.toBigNumber(result).toString();
-            var isOfTkn = (web3.fromWei(tokens, 'ether') * Math.pow(10, 18)).toFixed(0)
-            $('#countdown-days').text(isOfTkn + ' Certificates of Deposit')
+            var isOfTkn = (web3.fromWei(tokens, 'ether') * Math.pow(10, 18)).toFixed(0);
+            $('#countdown-days').text(isOfTkn + ' Certificates of Deposit');
         console.log(isOfTkn)
 
 
@@ -402,7 +402,7 @@ $( '#submit' ).on( "click", function() {
         if (result) {
 
             var tokens = web3.toBigNumber(result).toString();
-            var blOfTokn = web3.fromWei(tokens, 'ether') * Math.pow(10, 18).toFixed(0)
+            var blOfTokn = web3.fromWei(tokens, 'ether') * Math.pow(10, 18).toFixed(0);
 
             $('#coinage').text(" " + blOfTokn + ' Certificates of Deposit')
 
@@ -410,7 +410,7 @@ $( '#submit' ).on( "click", function() {
             console.log(err); // Dump errors here
             $.getJSON( "https://api.etherscan.io/api?module=proxy&action=eth_call&to="+ contractAddr +"&data="+ balanceOf + tknAddress +"&tag=latest&apikey=" + apiKey, function( json ) {
                 var tokens = web3.toBigNumber(result).toString();
-                var blOfTokn = web3.fromWei(tokens, 'ether') * Math.pow(10, 18).toFixed(0)
+                var blOfTokn = web3.fromWei(tokens, 'ether') * Math.pow(10, 18).toFixed(0);
 
                 $('#coinage').text(" " + blOfTokn + ' Certificates of Deposit')
 
@@ -426,17 +426,17 @@ $( '#submit' ).on( "click", function() {
         if (result) {
 
             var tokens = web3.toBigNumber(result).toString();
-            var blOfTokn = web3.fromWei(tokens, 'ether') * Math.pow(10, 18).toFixed(0)
+            var blOfTokn = web3.fromWei(tokens, 'ether') * Math.pow(10, 18).toFixed(0);
 
-            $('#deposit').text(" " + blOfTokn + ' Certificates of Deposit')
+            $('#deposit').text(" " + blOfTokn + ' Certificates of Deposit');
 
         } else {
             console.log(err); // Dump errors here
             $.getJSON( "https://api.etherscan.io/api?module=proxy&action=eth_call&to="+ contractAddr +"&data="+ balanceOf + tknAddress +"&tag=latest&apikey=" + apiKey, function( json ) {
                 var tokens = web3.toBigNumber(result).toString();
-                var blOfTokn = web3.fromWei(tokens, 'ether') * Math.pow(10, 18).toFixed(0)
+                var blOfTokn = web3.fromWei(tokens, 'ether') * Math.pow(10, 18).toFixed(0);
 
-                $('#deposit').text(" " + blOfTokn + ' Certificates of Deposit')
+                $('#deposit').text(" " + blOfTokn + ' Certificates of Deposit');
 
 
             });
