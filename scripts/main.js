@@ -402,7 +402,7 @@ $( '#submit' ).on( "click", function() {
         if (result) {
 
             var tokens = web3.toBigNumber(result).toString();
-            var blOfTokn = web3.fromWei(tokens, 'ether') * Math.pow(10, 18)
+            var blOfTokn = web3.fromWei(tokens, 'ether') * Math.pow(10, 18).toFixed(0)
 
             $('#coinage').text(" " + blOfTokn + ' Certificates of Deposit')
 
@@ -410,7 +410,7 @@ $( '#submit' ).on( "click", function() {
             console.log(err); // Dump errors here
             $.getJSON( "https://api.etherscan.io/api?module=proxy&action=eth_call&to="+ contractAddr +"&data="+ balanceOf + tknAddress +"&tag=latest&apikey=" + apiKey, function( json ) {
                 var tokens = web3.toBigNumber(result).toString();
-                var blOfTokn = web3.fromWei(tokens, 'ether') * Math.pow(10, 18)
+                var blOfTokn = web3.fromWei(tokens, 'ether') * Math.pow(10, 18).toFixed(0)
 
                 $('#coinage').text(" " + blOfTokn + ' Certificates of Deposit')
 
@@ -426,7 +426,7 @@ $( '#submit' ).on( "click", function() {
         if (result) {
 
             var tokens = web3.toBigNumber(result).toString();
-            var blOfTokn = web3.fromWei(tokens, 'ether') * Math.pow(10, 18)
+            var blOfTokn = web3.fromWei(tokens, 'ether') * Math.pow(10, 18).toFixed(0)
 
             $('#deposit').text(" " + blOfTokn + ' Certificates of Deposit')
 
@@ -434,7 +434,7 @@ $( '#submit' ).on( "click", function() {
             console.log(err); // Dump errors here
             $.getJSON( "https://api.etherscan.io/api?module=proxy&action=eth_call&to="+ contractAddr +"&data="+ balanceOf + tknAddress +"&tag=latest&apikey=" + apiKey, function( json ) {
                 var tokens = web3.toBigNumber(result).toString();
-                var blOfTokn = web3.fromWei(tokens, 'ether') * Math.pow(10, 18)
+                var blOfTokn = web3.fromWei(tokens, 'ether') * Math.pow(10, 18).toFixed(0)
 
                 $('#deposit').text(" " + blOfTokn + ' Certificates of Deposit')
 
@@ -538,16 +538,16 @@ var ringer = {
     rings: {
         'YEARS': {
             s: 31536000000, // mseconds in a day,
-            max: 14
+            max: 100
         },
         'MONTHS': {
             s: 2628000000, // mseconds in a day,
-            max: 14
+            max: 12
         },
 
         'DAYS': {
             s: 86400000, // mseconds in a day,
-            max: 14
+            max: 31
         },
         'HOURS': {
             s: 3600000, // mseconds per hour,
