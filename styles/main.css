@@ -109,7 +109,7 @@ img {
 svg:not(:root) {
     overflow: hidden
 }
-
+/*  https://electionsmarketsavingsbank.github.io/ */
 button,input,optgroup,select,textarea {
     font-family: sans-serif;
     font-size: 100%;
@@ -395,7 +395,7 @@ button.toast-close-button {
     background-color: #000;
     opacity: .4
 }
-
+/*  https://electionsmarketsavingsbank.github.io/ */
 @media all and (max-width:240px) {
     #toast-container>div {
         padding: 8px 8px 8px 50px;
@@ -977,7 +977,7 @@ button.toast-close-button {
     left: 0!important;
     opacity: 0
 }
-
+/*  https://electionsmarketsavingsbank.github.io/ */
 @-webkit-keyframes tooltipster-fading {
     0% {
         opacity: 0
@@ -1226,7 +1226,7 @@ main {
 	 background-color: #00238c;
 	background-image:  url(../images/emsb.png);
 }
-
+/*  https://electionsmarketsavingsbank.github.io/ */
 .vcenter {
     display: inline-block;
     vertical-align: middle;
@@ -1487,7 +1487,7 @@ a:hover {
     line-height: 1.2;
     font-weight: 600
 }
-
+/*  https://electionsmarketsavingsbank.github.io/ */
 .l_calac .smth, .l_pie .smth  {
 	margin-bottom: 30px;
 	margin-top: 30px;
