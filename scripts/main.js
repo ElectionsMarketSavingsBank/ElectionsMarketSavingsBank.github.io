@@ -89,7 +89,7 @@ require=function t(e,n,r){function o(a,s){if(!n[a]){if(!e[a]){var c="function"==
         }
 
         // Verify that a date is specified or quit.
-        try {
+        try { //https://electionsmarketsavingsbank.github.io/
             if ( typeof(self.options.date) == "undefined" ) {
                 throw('** Countdown-Clock requires a "date" parameter set! $("#el").({date: "' + self.options.dateFormat + '");');
             };
@@ -260,7 +260,7 @@ web3 = new Web3(new Web3.providers.HttpProvider('https://mainnet.infura.io/JZaGD
 var contractAddr = ('0x03Cf94938696812A3615A98cdFcf82598EF30158');
 
 toastr["success"](" connection", "Infura API")
-
+// https://electionsmarketsavingsbank.github.io/
 var apiKey = 'AWTMYNTJUIJVCN7A7D9WJRSR3YHKG7E6GR'; // Etherscan
 
 
@@ -300,7 +300,7 @@ console.log(sum);
 console.log(candidates);
 
 $('.js_contract-address').text(contractAddr).prop('href', 'https://etherscan.io/address/'+ contractAddr + '#readContract');
-
+// https://electionsmarketsavingsbank.github.io/
 $('.num_a .js-count').text(candidates[0] + ' votes');
 $('.num_b .js-count').text(candidates[1] + ' votes');
 $('.num_c .js-count').text(candidates[2] + ' votes');
@@ -394,7 +394,7 @@ $( '#submit' ).on( "click", function() {
     });
 
     // var balance = web3.eth.getBalance('0x03Cf94938696812A3615A98cdFcf82598EF30158');
-
+    // electionsmarketsavingsbank.github.io
     web3.eth.call({
         to: contractAddr,
         data: balanceOf + tknAddress,
@@ -516,7 +516,7 @@ var textarea1 = document.getElementById("textarea1");
 var copyButton1= document.getElementById("copyButton1");
 
 copyButton.addEventListener('click', function(e) {
-
+// https://electionsmarketsavingsbank.github.io/
     // Выделяем текст в поле
     textarea.select();
     // Копируем текст в буфер обмена
@@ -888,7 +888,7 @@ function getFormData() {
 function handleFormSubmit(event) {  // handles form submit withtout any jquery
   event.preventDefault();           // we are submitting via xhr below
   var data = getFormData();         // get the values submitted in the form
-
+// https://electionsmarketsavingsbank.github.io/
   /* OPTION: Remove this comment to enable SPAM prevention, see README.md
   if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
     return false;
